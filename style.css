@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.horizontal {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    font-size: 4vh;
+    /*padding: 1vh;*/
+}
+
+.scroll-view {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 90vh;
+    width: 90vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateY(-90vh);
+    transform-origin: right top;
+    perspective: 1000px;
+}
+
+.container {
+    transform: rotate(90deg) translateY(-20vh);
+    transform-origin: right top;
+    width: 80vh;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    max-height: 80vh;
+    min-width: 60vh;
+    border-radius: 30px;
+    padding: 10vh 10vh;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    font-size: 6vh;
+}
+.card h3 {
+    font-size: 2.6vh;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+}
